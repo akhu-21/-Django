@@ -1,1 +1,147 @@
-<h1>this is the Home section from templates</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x300') no-repeat center;
+            background-size: cover;
+            color: white;
+            padding: 80px;
+            text-align: center;
+        }
+
+        /* Products */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div><strong>MyShop</strong></div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Cart</a>
+        <a href="#">Login</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Welcome to MyShop</h1>
+    <p>Best Products at Best Prices</p>
+</div>
+
+<!-- Product Section -->
+<div class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Product 1</h3>
+        <p class="price">₹499</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Product 2</h3>
+        <p class="price">₹799</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Product 3</h3>
+        <p class="price">₹999</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Product 4</h3>
+        <p class="price">₹1299</p>
+        <button>Add to Cart</button>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>© 2026 MyShop | All Rights Reserved</p>
+</div>
+
+</body>
+</html>
