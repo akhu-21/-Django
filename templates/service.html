@@ -1,1 +1,111 @@
-<h1>this is the Service section from templates</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-box h3 {
+            color: #333;
+        }
+
+        .service-box p {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Services</h1>
+</header>
+
+<div class="container">
+    <div class="services">
+
+        <div class="service-box">
+            <h3>Fast Delivery</h3>
+            <p>Get your products delivered quickly with our reliable shipping service.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>24/7 Customer Support</h3>
+            <p>We are always here to help you with any queries or issues.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Secure Payment</h3>
+            <p>All transactions are safe and encrypted for your protection.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Easy Returns</h3>
+            <p>Hassle-free returns within 7 days of purchase.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Best Quality</h3>
+            <p>We ensure high-quality products at the best prices.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Offers & Discounts</h3>
+            <p>Enjoy exciting deals and discounts regularly.</p>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Your E-commerce Website</p>
+</footer>
+
+</body>
+</html>
