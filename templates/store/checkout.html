@@ -1,3 +1,107 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/main.css'%}">
-<h3>Checkout page </h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .checkout-box {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        .summary {
+            background: #fafafa;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Checkout</h2>
+
+    <div class="checkout-box">
+        <form id="checkoutForm">
+
+            <h3>Billing Details</h3>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Phone Number" required>
+            <input type="text" placeholder="Address" required>
+
+            <h3>Payment Method</h3>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="cod">Cash on Delivery</option>
+                <option value="card">Credit/Debit Card</option>
+                <option value="upi">UPI</option>
+            </select>
+
+            <div class="summary">
+                <h3>Order Summary</h3>
+                <p>Item Total: ₹<span id="itemTotal">1000</span></p>
+                <p>Shipping: ₹<span id="shipping">50</span></p>
+                <hr>
+                <p><strong>Total: ₹<span id="total">1050</span></strong></p>
+            </div>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById("checkoutForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Order placed successfully!");
+    });
+</script>
+
+</body>
+</html>
